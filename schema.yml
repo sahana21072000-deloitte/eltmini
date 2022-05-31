@@ -1,0 +1,40 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: badges
+    description: "Badges Table"
+    columns:
+     - name: No_of_user
+       tests:
+         - not null
+  - name: displaynamenau
+    description: "Test where display name contains nau"
+    columns:
+     - name: Text
+       tests:
+         - not null
+  - name: alex
+    description: "alexandrul"
+    columns:
+     - name: Text
+     - name: Display_Name
+       tests:
+         - not null
